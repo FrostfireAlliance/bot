@@ -16,7 +16,7 @@ def greet_new_members(message):
             f"<b>Сделай приписку в нике</b> <code>🧊[FA] ник❄️</code>"
         )
         keyboard = types.InlineKeyboardMarkup()
-        button = types.InlineKeyboardButton("Правила", url="frostfirealliance.great-site.net")
+        button = types.InlineKeyboardButton("Правила", url="frostfirealliance.github.io")
         keyboard.add(button)
         bot.send_message(message.chat.id, welcome_text, parse_mode="HTML", reply_markup=keyboard)
 
@@ -29,7 +29,7 @@ def send_rules(message):
         f"{profile_link}, <b>правила:</b>\n"
     )
     keyboard = types.InlineKeyboardMarkup()
-    button = types.InlineKeyboardButton("Тык", url="frostfirealliance.great-site.net")
+    button = types.InlineKeyboardButton("Тык", url="frostfirealliance.github.io")
     keyboard.add(button)
     
     bot.send_message(message.chat.id, rules_text, parse_mode="HTML", reply_markup=keyboard)
